@@ -1,0 +1,45 @@
+[2026-04-16T00:19:45Z] === ENRICH ITERATION 1 START | repo=anthropics/claude-code-action sha=2ff1acb3 ===
+[2026-04-16T00:19:45Z] [iter=1] PHASE START: enrich repo=anthropics/claude-code-action sha=2ff1acb3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff1acb3-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff1acb3ee319fa302837dad6e17c2f36c0d98ea.nq.gz
+[2026-04-16T00:20:00Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-16T00:20:04Z] [iter=1] AST store loaded triples=618042 load_secs=4 mem_mb=855 MB
+[2026-04-16T00:20:04Z] [iter=1] Step 2: Finding LSP targets mem_mb=855 MB
+[2026-04-16T00:20:05Z] [iter=1] LSP targets found call_sites=6523 imports=321 extends=3 implements=0 secs=0
+[2026-04-16T00:20:05Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=855 MB
+[2026-04-16T00:20:08Z] [iter=1] Position index built positions=42575 nodes_with_types=50543 secs=3 mem_mb=855 MB
+[2026-04-16T00:20:08Z] [iter=1] Step 3: Starting LSP resolution mem_mb=855 MB already_completed_types=[] already_completed_files=0
+[2026-04-16T00:20:08Z] [iter=1] Resolving target type target_type=call_site count=6523
+[2026-04-16T00:20:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=1 resolved=0 errors=89 current=base-action/src/setup-claude-code-settings.ts
+[2026-04-16T00:21:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=3 resolved=5 errors=437 current=test/actor-filter.test.ts
+[2026-04-16T00:22:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=4 resolved=5 errors=590 current=src/github/operations/branch-cleanup.ts
+[2026-04-16T00:23:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=6 resolved=5 errors=780 current=src/github/operations/git-config.ts
+[2026-04-16T00:24:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=8 resolved=5 errors=1079 current=test/format-turns.test.ts
+[2026-04-16T00:25:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=9 resolved=7 errors=1336 current=test/validate-branch-name.test.ts
+[2026-04-16T00:26:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=10 resolved=7 errors=1598 current=test/create-prompt.test.ts
+[2026-04-16T00:28:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=11 resolved=7 errors=2065 current=src/create-prompt/index.ts
+[2026-04-16T00:28:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=13 resolved=7 errors=2202 current=src/modes/detector.ts
+[2026-04-16T00:29:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=15 resolved=14 errors=2397 current=test/data-fetcher.test.ts
+[2026-04-16T00:31:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=16 resolved=28 errors=2879 current=src/entrypoints/run.ts
+[2026-04-16T00:32:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=19 resolved=32 errors=3276 current=test/retry.test.ts
+[2026-04-16T00:33:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.9 files_done=25 resolved=43 errors=3547 current=test/modes/detector.test.ts
+[2026-04-16T00:34:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=29 resolved=56 errors=3707 current=src/github/operations/comment-logic.ts
+[2026-04-16T00:34:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=31 resolved=60 errors=3855 current=src/mcp/github-file-ops-server.ts
+[2026-04-16T00:35:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=33 resolved=74 errors=4032 current=base-action/test/prepare-prompt.test.ts
+[2026-04-16T00:36:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.3 files_done=35 resolved=74 errors=4197 current=base-action/test/validate-env.test.ts
+[2026-04-16T00:36:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=37 resolved=79 errors=4338 current=src/github/operations/branch.ts
+[2026-04-16T00:37:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=40 resolved=94 errors=4504 current=src/modes/agent/index.ts
+[2026-04-16T00:38:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=44 resolved=121 errors=4726 current=base-action/test/parse-shell-args.test.ts
+[2026-04-16T00:38:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.9 files_done=47 resolved=140 errors=4861 current=test/branch-cleanup.test.ts
+[2026-04-16T00:39:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=50 resolved=165 errors=5021 current=src/github/operations/comments/create-initial.ts
+[2026-04-16T00:39:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=53 resolved=167 errors=5200 current=base-action/src/run-claude-sdk.ts
+[2026-04-16T00:40:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=57 resolved=175 errors=5337 current=src/mcp/path-validation.ts
+[2026-04-16T00:41:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=62 resolved=186 errors=5533 current=test/url-encoding.test.ts
+[2026-04-16T00:41:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=64 resolved=186 errors=5667 current=src/github/validation/permissions.ts
+[2026-04-16T00:42:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=73 resolved=200 errors=5796 current=test/modes/tag.test.ts
+[2026-04-16T00:42:26Z] [iter=1] Target type resolved target_type=call_site resolved=203 errors=5850 secs=1338 mem_mb=855 MB
+[2026-04-16T00:42:26Z] [iter=1] Resolving target type target_type=import_statement count=321
+[2026-04-16T00:42:31Z] [iter=1] Target type resolved target_type=import_statement resolved=187 errors=0 secs=5 mem_mb=855 MB
+[2026-04-16T00:42:31Z] [iter=1] Resolving target type target_type=extends_clause count=3
+[2026-04-16T00:42:32Z] [iter=1] Target type resolved target_type=extends_clause resolved=3 errors=0 secs=2 mem_mb=855 MB
+[2026-04-16T00:42:36Z] [iter=1] Step 5: Writing final enrichment file triples=63582
+[2026-04-16T00:42:38Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff1acb3ee319fa302837dad6e17c2f36c0d98ea.nq.gz size_kb=1316
+[2026-04-16T00:42:38Z] [iter=1] PHASE END: enrich elapsed_s=1372 elapsed_min=22.9 total_triples=63582
